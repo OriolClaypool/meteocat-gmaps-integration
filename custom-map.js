@@ -14,3 +14,7 @@ function initCustomMap() {
   const radarOverlay = new google.maps.GroundOverlay(radarImageUrl, radarBounds);
   radarOverlay.setMap(map);
 }
+
+// Llama a la función initCustomMap cuando se carga la API de Google Maps
+google.maps.event.addDomListener(window, "load", initCustomMap);
+
